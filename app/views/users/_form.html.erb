@@ -18,8 +18,10 @@
 
   <div class="field">
     <%= form.label :team_id %>
-    <%= form.text_field :team_id %>
+    <%= form.select :team_id, Team.all.collect { |t| [t.name, t.id]}, include_blank: true %>
   </div>
+
+  <%= form.file_field :avatar %>
 
   <div class="actions">
     <%= form.submit %>

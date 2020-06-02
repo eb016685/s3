@@ -63,3 +63,4 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'bootstrap-sass', '~> 3.4', '>= 3.4.1'
 gem 'jquery-rails', '~> 4.4'
 gem 'faker', '~> 2.12'
+gem "aws-sdk-s3", require: false
